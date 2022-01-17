@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>food world</title>
+  <link rel="stylesheet" href="normaliz.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Hahmlet&display=swap');
+
+
+    *{
+      margin: 0;
+      padding: 0;
+       
+    }
+    .cointainer{
+     height: 100vh;
+     background-image: url(burger.jpg);
+     display: grid;
+     justify-content: center;
+     align-items: center;
+     background-size: cover;
+     position: relative;
+
+    }
+    .cont{
+      position: absolute;
+      color: rgb(255, 255, 255);
+      top: 20vh;
+      left: 20vw;
+      right: 20vw;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%); */
+    }
+    .ss{
+      
+      font-family: Poppins;
+
+     }
+     .search{
+       width: 40vw;
+       height: 8vh;
+       margin-top: 1vh; 
+       border:none;
+       border-radius: 8px;
+       font-family: Poppins;
+       /* border-bottom: 5px solid black; */
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-left: 16px;
+       
+      }
+      .post{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       font-size: 18px;
+       font-family: Poppins;
+      }
+      h1{
+        text-align: center;
+        color: white;
+        font-family: Hahmlet;
+        font-size: 6vh;
+      }
+      h4{
+        color: black;
+        font-size: 20px;
+      }
+    
+      p{
+        font-size: 20px;
+      }
+      .btndiv{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn{
+        background-color: rgb(120, 248, 195);
+        width: 10vw;
+        height: 5vh;
+        border: none;
+        margin-top: 5vh;
+        box-shadow: 5px 2px 20px rgb(120, 240, 190) ;
+
+      }
+      .ps{
+        position: relative;
+        left: 10vw;
+      }
+      .container2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 5vh;
+        padding: 10vw;
+        padding-top: 10px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+      }
+      .img{
+        width: 25vw;
+        height: 30vh;
+        border-radius: 10px;
+      }
+      .box{
+        width: 25vw;
+        height: 50vh;
+        border: none;
+        box-shadow: 5px 2px 15px rgb(107, 108, 131);
+        border-radius: 10px;
+      }
+      h3{
+        font-size: 6vh;
+        text-align: center;
+        font-family:Dancing Script ;
+      }
+      .container2 p{
+        font-size: 2.5vh;
+        padding-left: 5px;
+        
+      }
+
+      .box:hover .img{
+        width: 28vw;
+        height: 35vh;
+      }
+      .box:hover   h3{
+        font-size: 7.5vh;
+        text-align: center;
+        font-family:Dancing Script ;
+      }
+      .box:hover {
+        width: 28vw;
+        height: 55vh;
+        border: none;
+        box-shadow: 5px 2px 5px rgb(71, 71, 83);
+      }
+
+      
+
+      .footer{
+       height:30vh;
+       background-color: black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
+     .icons{
+       width: 8vw;
+       height: 8vw;
+       border-radius: 4vw;
+       background-color:	#b3b3b3;
+       box-shadow: 5px 2px 10px #999999;
+       margin: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+
+     }
+     .fa-facebook{
+       color: blue;
+     }
+     .fa-google{
+       color: rgb(255, 0, 0);
+     }
+     .fa-instagram{
+       color: rgb(250, 40, 215);
+     }
+     .fa-linkedin{
+       color: rgb(0, 117, 250);
+     }
+     a i{
+       transition: all .1s linear;
+     }
+     a:hover i{
+       transform: scale(2.0);
+     }
+     .box p{
+       font-family: Poppins;
+     }
+  </style>
+</head>
+<body>
+  <div class="cointainer">
+    <div class="cont">
+     <h1 class="ss">Welcome To The FOOD World</h1>
+     <br>
+     <p class="ss" id="lorem">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusamus, architecto 
+       excepturi at quo saepe fugiat ipsam reprehenderit dicta vitae quam ab veniam illum 
+       voluptate recusandae aperiam, rem quia? Suscipit!
+     </p>
+     <br>
+      
+     <div class="ps">
+      <h4 class="ss">Post code</h4>
+     </div>
+
+
+     <form action="action.php" class="post">
+         <input type="text" class="search"  placeholder="Enter your Post code" >
+     </form>
+
+
+
+     <div class="btndiv">
+       <button type="submit" class="btn">
+          Find Food  
+       </button>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container2">
+   
+  <div class="box">
+    <img src="cake, food, dessert, birthday cake background image.jpg" alt="cake" class="img">
+    <h3>delicious cake</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis quibusdam consequatur doloremque error voluptatem!</p>
+  </div>
+
+
+  <div class="box">
+    <img src="fast food, food, hamburger, junk food wallpaper.jpg" alt="cake" class="img">
+    <h3>Fast Food</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis quibusdam consequatur doloremque error voluptatem!</p>
+  </div>
+
+
+  <div class="box">
+    <img src="sandwich.jfif" alt="cake" class="img">
+    <h3>Awesome sandwich</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit blanditiis quibusdam consequatur doloremque error voluptatem!</p>
+  </div>
+</div>
+
+
+
+<div class="maincont">
+  <div class="footer">
+    <div class="icons">
+      <a href="">
+        <i class="fa fa-2x fa-facebook"></i>
+      </a>
+    </div>
+    <div class="icons">
+      <a href="">
+        <i class="fa fa-2x fa-google"></i>
+      </a>
+    </div>
+    <div class="icons">
+      <a href="">
+        <i class="fa fa-2x fa-instagram"></i>
+      </a>
+    </div>
+    <div class="icons">
+      <a href="">
+        <i class="fa fa-2x fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
